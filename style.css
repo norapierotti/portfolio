@@ -1,0 +1,44 @@
+/* /////////TYPOGRAPHIE///////// */
+
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(reset.css);
+body { 
+ font-family: "public Sans", cursive;
+}
+
+
+/* font size */
+:root{
+	--size-XXL: 64px;
+	--size-XL: 32px;
+	--size-L: 20px;
+	--size-M: 16px;
+	--size-S: 13px;
+}
+
+p { font-size: var(--size-M);}
+h1 { font-size: var(--size-XXL);}
+
+
+/*  font weight */
+
+:root{
+	--weight-light:275;
+	--weight-regular:382;
+	--weight-bold:599;
+}
+body p { font-weight: var(--weight-regular);}
+b strong h6 h5 h4 h3 h2 {font-weight: var(--weight-bold);}
+
+h1 { font-weight: var(--weight-light);}
+
+/* /////////COULEUR///////// */
+:root {
+	--couleur-principale: #FF2244
+}
+
+h1{color: var(--couleur-principale);}
+
+
+section{ min-height: 100vh;}
