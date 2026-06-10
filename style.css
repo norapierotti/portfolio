@@ -18,7 +18,7 @@ body {
 }
 
 p { font-size: var(--size-M);}
-h1 { font-size: var(--size-XXL);}
+h1 { font-size: var(--size-XL);}
 
 
 /*  font weight */
@@ -35,10 +35,82 @@ h1 { font-weight: var(--weight-light);}
 
 /* /////////COULEUR///////// */
 :root {
-	--couleur-principale: #FF2244
+	--couleur-principale: #000
 }
-
 h1{color: var(--couleur-principale);}
 
+/* /////////DECO///////// */
+a {
+	text-decoration: none;
+	/* text-decoration: underline; */
+	text-underline-offset: 0.3rem ;
+	text-decoration-thickness: 1px;
+	text-decoration-style: dotted;
+}
+
+section {
+	border-top: 1px solid var(--couleur-principale);
+}
+
+/* /////////MISE EN PAGE///////// */
+:root { --spacer: 2rem; }
+
+.row { display: flex; gap: var(--spacer);}
+.row > * { flex: 1; }
+
+#Intro {min-height: 20vh;}
+
+section {
+	min-height: 100vh;
+	margin-top: calc( var(--spacer) * 3);
+}
+
+body { padding: var(--spacer);}
 
 section{ min-height: 100vh;}
+section {
+	display: flex;
+	gap: var(--spacer);
+	flex-wrap: wrap;
+	justify-content: center;
+}
+section > h2 { flex: 0 0 100%;}
+section > a { flex: 0 1 256px;}
+/* .vignette { max-width: 256px;} */
+
+/* /////////UI///////// */
+html, body {
+scroll-behavior: smooth;
+}
+
+nav { 
+	position: sticky;
+	top: 0;
+	background: #fff;
+	padding: 0.5rem 0;
+}
+
+h2 {
+	position: sticky;
+	top: 2rem;
+	background: #fff;
+	padding: 0.5rem 0;
+}
+
+.gallery {
+	height: auto;
+	position: relative;
+	/* background: pink; */
+	padding-top: 100%;
+}
+.gallery img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/* opacity: .5; */
+	position: absolute;
+	top: 0;
+}
+
+
+
